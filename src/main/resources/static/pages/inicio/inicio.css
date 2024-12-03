@@ -1,0 +1,145 @@
+section {
+  padding: 0 14%;
+}
+
+.ayotl {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  align-items: center;
+  gap: 2 rem;
+}
+
+.ayotl-img img {
+  width: 100%;
+  height: 100%;
+}
+
+.ayotl-text {
+  background-color: #ffe3cf;
+  padding: 25px;
+  border-radius: 10px;
+  -webkit-box-shadow: 9px 10px 28px 0px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: 9px 10px 28px 0px rgba(0, 0, 0, 0.75);
+  box-shadow: 9px 10px 28px 0px rgba(0, 0, 0, 0.75);
+  transition: all 0.6s ease;
+}
+
+.ayotl-text:hover {
+  transform: scale(1.03);
+  background-color: #29524a;
+  color: #fffbec;
+}
+
+.ayotl-text h1 {
+  font-size: 25px;
+  font-weight: 700;
+  margin: 15px 0;
+}
+
+.ayotl-text h5 {
+  font-size: 30px;
+  font-weight: 900;
+  letter-spacing: 1px;
+}
+
+.ayotl-text p {
+  width: 100%;
+  max-width: 620px;
+  font-size: 2rem;
+  font-weight: 200;
+  line-height: 32px;
+  margin-bottom: 40px;
+}
+
+.ayotl-main {
+  display: flex;
+  align-items: center;
+}
+
+.icons {
+  position: absolute;
+  top: 50%;
+  padding: 0 7%;
+  transform: translateY(-50%);
+}
+
+.icons i {
+  display: block;
+  margin: 35px 0;
+  font-size: 23px;
+  transition: all 0.6s;
+}
+
+.icons i:hover {
+  transform: translateY(-5px);
+  color: #0f1a1d;
+}
+
+@media (max-width: 1770px) {
+  .icons {
+    padding: 0 4%;
+  }
+}
+
+@media (max-width: 1670px) {
+}
+
+@media (max-width: 1370px) {
+  .icons {
+    display: none;
+  }
+  section {
+    padding: 0 4%;
+  }
+}
+
+@media (max-width: 1150px) {
+}
+
+@media (max-width: 920px) {
+  .ayotl {
+    grid-template-columns: 1fr;
+    height: auto;
+  }
+
+  .ayotl-text {
+    padding-top: 130px;
+  }
+
+  .ayotl-img {
+    height: 500px;
+    width: 500px;
+    margin: 0 auto;
+  }
+
+  .ayotl-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+}
+
+@media (max-width: 570px) {
+  .ayotl {
+    height: 100vh;
+  }
+  .ayotl-img {
+    height: 400px;
+    width: 400px;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 440px) {
+  .ayotl-text h5 {
+    font-size: 15px;
+  }
+  .ayotl-img {
+    height: 360px;
+    width: 360px;
+    margin: 0 auto;
+  }
+}
